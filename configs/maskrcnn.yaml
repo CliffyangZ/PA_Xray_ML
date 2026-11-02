@@ -1,0 +1,9 @@
+name: maskrcnn
+family: maskrcnn
+pretrained: true            # torchvision COCO weights (downloaded once); falls back to random init if unavailable
+epochs: 50
+batch: 2
+lr: 0.005
+momentum: 0.9
+weight_decay: 0.0005
+amp: true

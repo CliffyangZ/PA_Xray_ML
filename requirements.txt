@@ -1,0 +1,12 @@
+# versions verified in mcv_env (Python 3.12)
+torch==2.13.0
+torchvision==0.28.0
+ultralytics==8.4.177
+albumentations==2.0.8
+opencv-python==5.0.0.93
+numpy==2.5.2
+scipy==1.18.0
+pandas==3.0.5
+PyYAML==6.0.3
+pycocotools==2.0.11
+pytest==9.1.1

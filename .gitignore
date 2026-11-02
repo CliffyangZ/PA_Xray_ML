@@ -1,0 +1,8 @@
+data_prep/
+data/
+model/
+results/
+specs/
+runs/
+__pycache__/
+*.pyc

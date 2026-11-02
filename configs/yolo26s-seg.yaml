@@ -1,0 +1,10 @@
+name: yolo26s-seg
+family: yolo_seg
+weights: yolo26s-seg.pt          # fallback: yolo26s.pt (detection weights) loaded into the -seg architecture
+fallback_weights: yolo26s.pt
+imgsz: 640
+epochs: 100
+batch: 8
+patience: 30
+optimizer: auto
+amp: true

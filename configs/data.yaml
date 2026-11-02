@@ -1,0 +1,26 @@
+# Shared preprocessing / augmentation / evaluation settings (spec FR-002a/b/c)
+seeds: [42, 43, 44]
+clahe:
+  clip_limit: 2.0
+  tile_grid: [8, 8]
+augmentation:           # offline, train split only
+  copies: 4
+  rotation_limit: 15    # degrees
+  rotation_p: 0.8
+  gaussian_noise_std: [0.01, 0.05]   # fraction of intensity range
+  gaussian_noise_p: 0.5
+  hflip_p: 0.5          # horizontal flip only
+evaluation:
+  iou_threshold: 0.5
+  tau_grid: {start: 0.001, stop: 0.95, step: 0.005}
+  min_score: 0.001
+  bootstrap_resamples: 1000
+  bootstrap_seed: 0
+  boundary_tolerance_px: 2
+  seg_threshold: 0.5
+paths:
+  detection_src: data/detection_dataset
+  segmentation_src: data/seg_dataset
+  data_prep: data_prep
+  results: results
+  pretrained: model/pretrained

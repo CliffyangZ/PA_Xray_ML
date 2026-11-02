@@ -1,0 +1,9 @@
+name: yolo26s
+family: yolo_det
+weights: yolo26s.pt
+imgsz: 640
+epochs: 100
+batch: 8
+patience: 30
+optimizer: auto
+amp: true

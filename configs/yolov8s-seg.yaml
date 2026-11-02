@@ -1,0 +1,10 @@
+name: yolov8s-seg
+family: yolo_seg
+weights: yolov8s-seg.pt          # fallback: yolov8s.pt (detection weights) loaded into the -seg architecture
+fallback_weights: yolov8s.pt
+imgsz: 640
+epochs: 100
+batch: 8
+patience: 30
+optimizer: auto
+amp: true
